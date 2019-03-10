@@ -1,9 +1,11 @@
 var button;
 
 //Time constructor
-function time(hour, minute) {
-    this.hour = hour;
-    this.minute = minute;
+class Time {
+    constructor(hour, minute) {
+        this.hour = hour;
+        this.minute = minute;
+    }
 }
 
 function extractTimeValues(timeStringValue) {
@@ -26,7 +28,7 @@ function extractTimeValues(timeStringValue) {
     hour = parseInt(hour);
     minute = parseInt(minute);
     
-    var extractedTime = new time(hour, minute);
+    var extractedTime = new Time(hour, minute);
     return extractedTime;
 }
 
@@ -55,7 +57,8 @@ function primaryButtonOperation() {
     //Change to time type
     time1 = extractTimeValues(time1);
     console.log(time1);
-    //time2 = extractTimeValues(time2);
+    time2 = extractTimeValues(time2);
+    console.log(time2);
     
     //Calculation if passed
     //calculateResult();
@@ -63,10 +66,8 @@ function primaryButtonOperation() {
 }
 
 //Actual calculation
-//function calculateResult(time1, time2) {
-//}
+function calculateResult(time1, time2) {
+}
 
 
-button = document.getElementById("calculate");
-button.addEventListener("click", buttonOperation());
-
+document.getElementById("calculate").addEventListener("click", buttonOperation);
