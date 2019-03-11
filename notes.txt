@@ -1,0 +1,6 @@
+Notes:
+-Increase modularity: I feel that the current/custom time toggle could be made into its own function
+-Reduce redundancy: A significant amount of the code feels repetitive, can we shorten it somehow?
+
+
+Product is functional, although there is much room for improvement.

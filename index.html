@@ -8,9 +8,20 @@
     <h1>Simple Time Calculator</h1>
     <p>
         <span>Start Time:</span> <input type="time" class="time-field">
+        <select class="time-selects">
+            <option value="today">Today</option>
+            <option value="tomorrow">Tomorrow</option>
+        </select>
+        <input class="visible" id="cur-time-button" type="button" value="Put Current Time">
+        <input class="invisible" id="custom-time-button" type="button" value="Put Custom Time">
     </p>
     <p>
-        <span>End Time:</span> <input type="time" class="time-field">
+        <span>End Time:</span>
+        <input type="time" class="time-field">
+        <select class="time-selects">
+            <option value="today">Today</option>
+            <option value="tomorrow">Tomorrow</option>
+        </select>
     </p>
     <input id="calculate" type="button" value="Calculate">
     

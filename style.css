@@ -2,3 +2,11 @@ span {
     display:inline-block;
     width:100px;
 }
+
+.visible {
+    display:inline-block;
+}
+
+.invisible {
+    display:none;
+}
