@@ -62,7 +62,7 @@ function primaryButtonOperation() {
     for (var i = 0; i < 2; i++) {
         if (document.getElementsByClassName("time-selects")[i].value == "tomorrow") {
             console.log("Pre: " + times[i].hour)
-            times[i].hour += 12;
+            times[i].hour += 24;
             console.log("Post: " + times[i].hour)
             }
         }
